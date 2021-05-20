@@ -12,8 +12,8 @@ public class UsingBufferedReader {
         //-------------- Test reading 1 MB file. --------------------
 
         StopWatch.start();
-
-        BufferedReader inputStream= new BufferedReader(new FileReader(DumpDataWriter.input1MB));
+        BufferedReader inputStream = new BufferedReader(new FileReader(args[0]));
+        //BufferedReader inputStream= new BufferedReader(new FileReader(DumpDataWriter.input1MB));
         while (inputStream.read()!=-1){}
 
         long duration = StopWatch.stop();
